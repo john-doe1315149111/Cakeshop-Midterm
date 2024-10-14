@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasty Treats</title>
+    <link rel="stylesheet" href="ForCakeshop2.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <h1></h1>
+        </div>
+        <div class="right">
+            <div class="text-box">
+            <h2>RECOMENDED FLAVOR</h2>
+            </div>
+            <ul>
+                <li><strong>Chocolate Hazelnut:</strong> rich chocolate cake with hazelnut filling.</li>
+                <li><strong>Lemon Blueberry:</strong> refreshing lemon cake with blueberries.</li>
+                <li><strong>Red Velvet:</strong> classic cake with cream cheese frosting.</li>
+            </ul>
+            <br>
+            <div class="text-box">
+            <h2>SIZES AVAILABLE</h2>
+            </div>
+            <ul>
+                <li><strong>6-inch Round:</strong>  serves 6-8 people.</li>
+                <li><strong>9-inch Round:</strong>  serves 12-16 guests.</li>
+                <li><strong>12-inch Square:</strong>  serves 24-30 servings.</li>
+            </ul>
+            <br>
+            <div class="text-box">
+            <h2>DESIGNS OFFERED</h2>
+            </div>
+            <ul>
+                <li><strong>Floral Pattern</strong></li>
+                <li><strong>Geometric Shapes</strong></li>
+                <li><strong>Classic Drip Cake</strong></li>
+            </ul>
+            <br>
+            <div class="text-box">
+            <h2>BAKERY HOURS</h2>
+            </div>
+            <ul>
+                <li><strong>Mon-Fri:</strong> 8:00 AM - 6:00 PM</li>
+                <li><strong>Saturday:</strong> 9:00 AM - 5:00 PM</li>
+                <li><strong>Sunday:</strong> closed</li>
+            </ul>
+            <br>
+            <form id="orderForm" action="OrderSuccess.html" method="GET">
+                <label for="flavor">Choose a Flavor:</label>
+                <select id="flavor" name="flavor">
+                    <option value="chocolateHazelnut">Chocolate Hazelnut</option>
+                    <option value="lemonBlueberry">Lemon Blueberry</option>
+                    <option value="redVelvet">Red Velvet</option>
+                </select>
+                
+                <label for="size">Choose a Size:</label>
+                <select id="size" name="size">
+                    <option value="6-inch">6-inch Round</option>
+                    <option value="9-inch">9-inch Round</option>
+                    <option value="12-inch">12-inch Square</option>
+                </select>
+        
+                <label for="design">Choose a Design:</label>
+                <select id="design" name="design">
+                    <option value="floral">Floral Pattern</option>
+                    <option value="geometric">Geometric Shapes</option>
+                    <option value="drip">Classic Drip Cake</option>
+                </select>
+        
+                <button type="submit">Submit</button>
+                <button type="button" onclick="document.getElementById('orderForm').reset();">Cancel</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
